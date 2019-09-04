@@ -15,7 +15,7 @@ Everytime i use the LaZagne project to extraxt stored passwords in a system i ge
 # USAGE
 
 * git clone ...
-* sudo CLOWN.PY
+* sudo CLOWN.py
 
            
       
